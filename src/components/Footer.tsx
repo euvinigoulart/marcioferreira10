@@ -66,7 +66,7 @@ export default function Footer() {
             <span>Foco</span>
           </div>
           <div className="text-white/30 text-[9px] uppercase tracking-widest text-center md:text-right">
-            CNPJ: 00.000.000/0001-00 - Eleições MDB
+            CNPJ: 68.456.234/0001-81 - Eleições 2026
           </div>
         </div>
       </div>

@@ -62,7 +62,7 @@ export default function About() {
               <img 
                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1000" 
                 alt="Encontro com o povo" 
-                className="w-full h-full object-cover rounded-[32px] relative z-10 grayscale opacity-80"
+                className="w-full h-full object-cover rounded-[32px] relative z-10 transition-all duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-[#002776]/20 mix-blend-multiply z-20"></div>
               

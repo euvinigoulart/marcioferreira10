@@ -11,8 +11,9 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="col-span-12 lg:col-span-7 flex flex-col justify-center"
         >
-          <div className="inline-block border border-[#FFDF00] text-[#FFDF00] text-[10px] font-bold px-3 py-1 mb-6 rounded-full w-fit uppercase tracking-[0.2em] bg-[#FFDF00]/10">
-            MDB • 55100 • ALVORADA E REGIÃO
+          <div className="inline-flex items-center gap-3 border border-[#FFDF00]/30 text-[#FFDF00] text-[10px] font-bold pr-4 pl-1 py-1 mb-6 rounded-full w-fit uppercase tracking-[0.2em] bg-[#FFDF00]/10 backdrop-blur-sm">
+            <span className="bg-[#FFDF00] text-[#002776] px-3 py-1.5 rounded-full font-black tracking-tighter">PSD 55</span>
+            <span>55100 • ALVORADA E REGIÃO</span>
           </div>
           
           <h1 className="text-6xl md:text-[90px] lg:text-[110px] leading-[0.85] font-black text-white uppercase tracking-tighter mb-8">
@@ -55,30 +56,27 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="col-span-12 lg:col-span-5 flex items-center justify-end relative h-[500px]"
         >
-          <div className="relative w-full max-w-[400px] h-[500px] bg-white/5 rounded-[40px] border border-white/20 overflow-hidden backdrop-blur-sm shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=1000" 
-              alt="Carlos Silva" 
-              className="absolute inset-0 w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#002776]/90 to-transparent"></div>
-            
-            <div className="absolute top-8 right-8">
-              <div className="w-24 h-24 border border-[#FFDF00] rounded-full flex items-center justify-center opacity-30 animate-pulse">
-                <div className="w-16 h-16 border border-[#FFDF00] rounded-full"></div>
-              </div>
-            </div>
+          {/* Green Glow Behind Photo */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#4ade80] rounded-full blur-[100px] opacity-60 z-0"></div>
 
-            <div className="absolute bottom-8 left-8 right-8 z-10">
-              <h3 className="text-white font-bold text-xl mb-2">A Voz de Quem Precisa</h3>
-              <p className="text-white/60 text-sm">Sempre presente em ações sociais e combatendo as injustiças no dia a dia.</p>
-              <div className="mt-6 h-1 w-full bg-white/20 rounded-full overflow-hidden">
-                <div className="h-full bg-[#FFDF00] w-full"></div>
-              </div>
-              <div className="flex justify-between mt-2">
-                <span className="text-[10px] text-white/40 uppercase font-bold tracking-widest">Compromisso</span>
-                <span className="text-[10px] text-[#FFDF00] uppercase font-bold tracking-widest">Inabalável</span>
-              </div>
+          <div className="relative w-full max-w-[400px] h-[500px] bg-white/5 rounded-[40px] border border-white/20 overflow-hidden backdrop-blur-sm shadow-2xl z-10">
+            <img 
+              src="/marcio-ferreira.png" 
+              alt="Márcio Ferreira" 
+              className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#002776]/90 via-[#002776]/20 to-transparent"></div>
+            
+            <div className="absolute bottom-20 left-8 right-8 z-20">
+              <h3 className="text-white font-black text-2xl mb-2 drop-shadow-md">A Voz de Quem Precisa</h3>
+              <p className="text-white font-medium text-base drop-shadow-md">Sempre presente em ações sociais e combatendo as injustiças no dia a dia.</p>
+            </div>
+          </div>
+          
+          {/* Floating Number Badge */}
+          <div className="absolute -bottom-6 left-4 md:-left-8 z-30">
+            <div className="bg-[#FFDF00] text-[#002776] px-6 py-3 rounded-2xl font-black text-6xl tracking-tighter shadow-[0_10px_40px_rgba(0,0,0,0.5)] transform -rotate-3 border-4 border-white/20">
+              55100
             </div>
           </div>
         </motion.div>
