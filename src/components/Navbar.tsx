@@ -20,11 +20,11 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#inicio" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-[#FFDF00] rounded-full flex items-center justify-center">
-            <div className="w-6 h-6 bg-[#002776] rounded-sm transform rotate-45 group-hover:rotate-90 transition-transform"></div>
-          </div>
-          <span className="text-white font-black text-2xl tracking-tighter uppercase">
+        <a href="#inicio" className="flex items-center gap-2 md:gap-3 group">
+          <span className="bg-[#FFDF00] text-[#002776] font-black text-xl md:text-2xl px-2 py-1 rounded-md tracking-tighter shadow-sm transform group-hover:scale-105 transition-transform">
+            55100
+          </span>
+          <span className="text-white font-black text-lg md:text-2xl tracking-tighter uppercase leading-none mt-1 sm:mt-0">
             MÁRCIO FERREIRA
           </span>
         </a>
